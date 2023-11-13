@@ -76,40 +76,43 @@ nav {
 
 /*  Landing */
 .landing__container {
- position: relative;
+  min-height: 100vh;
   width: 100%;
-  max-width: 1400px;
-  height: 100vh;
-
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .landing-img {
-  height: 100%;
+  height: auto;
   width: 100%;
-  object-fit: cover;
-  position: relative;
+  position: absolute;
+  max-width: 100%;
   }
 
-  .landing-img::after {
+.landing-overlay{
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 68%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
-  z-index: 1;}
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.95), transparent 95%);
+  z-index: 1;
+}
 
-/* .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 90%;
-  object-fit: cover;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent); 
-  z-index: 1; 
-} */
+.landing__info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;  
+   max-width: 600px;
+  padding: 0 30px;
+  z-index: 2;
+}
 
 .landing__title {
   font-size: 48px;
@@ -117,3 +120,4 @@ nav {
   color: white;
   margin: 16px 0;
 }
+

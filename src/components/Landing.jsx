@@ -3,15 +3,16 @@ import Landingimg from '../Assets/Landingimg.jpg'
 
 function Landing() {
     return (
-        <section className='landing__contaniner'>
-            <div className='overlay'></div>
+        <section className='landing__container'>
             <img className="landing-img" src={Landingimg} alt="" />
-            <div>
+            <div className="landing-overlay"></div>
+                <div className="landing__info">
                 <h1 className='landing__title'>
-                    Anime Finder
+                    Search the world's largest anime library.
                 </h1>
                 <p className='landing__para'>Get unlimited access to the best anime.</p>
-                <p className='landing__btn'>Try now</p>
+                    <a className='landing__btn' href=""><p>Try now</p></a>
+            
             </div>
         </section>
     )
