@@ -10,8 +10,10 @@ function Nav() {
       </div>
       <div>
         <ul className='links'>
-          <li className='link__list'>Log In</li>
-          <li className='link__list'>Sign up</li>
+          <a href=""><li className='link__list'>About Us</li></a>
+          <a href=""><li className='link__list'>Blog</li></a>
+          <li className='link__list login__btn'>Log In</li>
+          <li className='link__list signup__btn'>Sign up</li>
         </ul>
       </div>
     </nav>

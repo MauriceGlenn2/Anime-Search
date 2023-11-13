@@ -1,41 +1,119 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
   padding: 0;
   margin: 0 auto;
-  max-width: 1400px;
-  color: red;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
-p{
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
   font-size: 16px;
 }
 
-h1{
+h1 {
   font-size: 24px;
 }
 
-nav{
+nav {
   display: flex;
   justify-self: center;
   justify-content: space-between;
-  margin-top: 22px;
+  margin: 16px 0;
   align-items: center;
+  color: white;
+  width: 100%;
+  z-index: 3 !important;
+  position: relative;
 }
 
-.logo__container{
+.logo__container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.links{
+.links {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.link__list{
+.link__list {
   font-weight: 700;
   padding: 0 10px;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.login__btn {
+  background-color: #d044da;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: black;
+  margin-left: 12px;
+}
+
+.signup__btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid #d044da;
+  margin-left: 12px;
+  margin-top: 0px;
+}
+
+/*  Landing */
+.landing__container {
+ position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+
+}
+
+.landing-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  }
+
+  .landing-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1;}
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90%;
+  object-fit: cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent); 
+  z-index: 1; 
+} */
+
+.landing__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  margin: 16px 0;
 }
