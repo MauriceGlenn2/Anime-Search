@@ -6,7 +6,7 @@ function Nav() {
       
       <div className='logo__container'>
         <img src="" alt="" />
-        <h1>Anime Finder</h1>
+        <h1>Anime Explorer</h1>
       </div>
       <div>
         <ul className='links'>

@@ -3,19 +3,19 @@ import Landingimg from '../Assets/Landingimg.jpg'
 
 function Landing() {
     return (
-        <section className='landing__container'>
-            <img className="landing-img" src={Landingimg} alt="" />
-            <div className="landing-overlay"></div>
-                <div className="landing__info">
-                <h1 className='landing__title'>
-                    Search the world's largest anime library.
-                </h1>
-                <p className='landing__para'>Get unlimited access to the best anime.</p>
-                    <a className='landing__btn' href=""><p>Try now</p></a>
-            
+        <section className='landing__contianer'>
+            <div className='gradient' style={{}}></div>
+            <img className="gojo__img"src={Landingimg} alt="landing" />
+            <div className='landing__text--wrapper'>
+                <h1 className='landing__title'>Anime Explorer</h1>
+                <p className='landing__para'>Explore thousands of anime titles.</p>
+                <a className="try__btn-link" href="">
+                    <span className='try__btn'>Try Now</span>
+                </a>
             </div>
         </section>
     )
 }
 
 export default Landing
+
