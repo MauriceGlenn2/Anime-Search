@@ -113,7 +113,6 @@ nav {
 .landing__title{
   color: white;
   font-size: 60px;
-  
   text-align: left;
 }
 
@@ -134,7 +133,7 @@ nav {
   text-align: center;
   width: 200px;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .try__btn:hover{
@@ -153,8 +152,6 @@ nav {
   transform: translateY(1px)
 }
 
-
-
 /* Trending */
 .trending__container{
   display: flex;
@@ -162,5 +159,7 @@ nav {
   padding: 20px 0;
 }
 
-
+.white{
+  color: white;
+}
 
