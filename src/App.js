@@ -1,5 +1,6 @@
 import Landing from './components/Landing.jsx';
 import Nav from './components/Nav.jsx';
+import Search from './components/Search.jsx';
 import Trending from './components/Trending.jsx';
 
 
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       <Landing />
      <Trending />
+     <Search />
     </div>
   );
 }
