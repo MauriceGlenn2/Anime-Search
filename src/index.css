@@ -213,7 +213,8 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 50px auto;
+  
 }
 
 .search__input {
