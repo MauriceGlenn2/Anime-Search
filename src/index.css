@@ -206,7 +206,7 @@ nav {
 /* Search */
 .search__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 1200px;
   width: 100%;
   margin: 50px 0;
@@ -229,6 +229,7 @@ nav {
   outline: none;
   margin: 20px 0;
   text-align: left;
+  position: relative;
 }
 
 .search__form {
@@ -237,4 +238,16 @@ nav {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.search__results{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
