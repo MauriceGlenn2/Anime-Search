@@ -1,3 +1,4 @@
+import Footer from './components/Footer.jsx';
 import Landing from './components/Landing.jsx';
 import Nav from './components/Nav.jsx';
 import Search from './components/Search.jsx';
@@ -11,6 +12,7 @@ function App() {
       <Landing />
      <Trending />
      <Search />
+     <Footer />
     </div>
   );
 }
