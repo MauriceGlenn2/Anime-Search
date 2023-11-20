@@ -292,9 +292,6 @@ nav {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.205);
 }
-.footer__wrapper{
-  margin-bottom: 20px;
-}
 
 .footer__title{
   color: white;
@@ -322,4 +319,9 @@ nav {
   text-align: center;
   margin: 10px 0;
   font-size: 14px;
+}
+
+/* animeInfo */
+.animeInfo{
+  color: white;
 }

@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { Element } from 'react-scroll';
 
 function Search() {
+    console.log("search componet")
     const [search, setSearch] = useState([])
     const [searchTitle, setSearchTitle] = useState('')
     const [loading, setLoading] = useState(true)
 
     async function onSearch(event) {
+        console.log("search componet")
         if (event.key === "Enter") {
             setLoading(true)
             console.log("thisclicked")
@@ -23,6 +26,7 @@ function Search() {
     }, [])
 
     return (
+        <Element name="search">
         <div className='search__container'>
             <input
                 className='search__input'
@@ -59,6 +63,7 @@ function Search() {
                 )}
             </div>
         </div>
+        </Element>
     );
 }
 

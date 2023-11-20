@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 //https://api.jikan.moe/v4/top/anime
 function Trending() {
@@ -33,12 +34,13 @@ useEffect(() => {
           ))
         ) : (
           trending.map((trend) => (
-            <div className='upcoming__card' key={trend.mal_id}>
+            <Link to={`/AnimeInfo/${trend.mal_id}`}><div className='upcoming__card' key={trend.mal_id}>
               <img className='upcoming__img' src={trend.images.jpg.large_image_url} alt="" />
               <h1 className='upcoming__title'>
                 {trend.title_english}
               </h1>
             </div>
+            </Link>
           ))
         )}
       </div>

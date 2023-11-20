@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import LandingSlider from './LandingSlider.jsx';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink, Element } from 'react-scroll';
 
 function Landing() {
     return (
@@ -9,9 +11,9 @@ function Landing() {
             <div className='landing__text--wrapper'>
                 <h1 className='landing__title'>Anime Explorer</h1>
                 <p className='landing__para'>Explore thousands of anime titles.</p>
-                <a className="try__btn-link" href="">
+                <ScrollLink className="try__btn-link" to="search" smooth={"true"} duration={500}>
                     <span className='try__btn'>Try Now</span>
-                </a>
+                </ScrollLink>
             </div>
         </section>
     );

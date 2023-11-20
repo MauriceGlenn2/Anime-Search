@@ -10,7 +10,7 @@ function Footer() {
             <li className='link__list'>About Us</li>
             <li className='link__list'>Blog</li>
         </ul>
-          <p claassName="copyright__para">Copyright © Anime Explorer 2023</p>
+          <p className="copyright__para">Copyright © Anime Explorer 2023</p>
           </div>
     </footer>
   )
