@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faTimes);
+library.add(faTimes, faBars);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -7,9 +7,16 @@ import ds2 from '../Assets/ds2.jpg';
 import mha from '../Assets/mha.jpg';
 import aot from '../Assets/aot.jpg';
 import ff2 from '../Assets/ff2.jpg';
+import mobjjk2 from '../Assets/mobjjk2.jpg';
+import mobff2 from '../Assets/mobff2.jpg';
+import mobaot2 from '../Assets/mobaot2.jpg';
+import mobds2 from '../Assets/mobds2.jpg';
+import mobop2 from '../Assets/mobop2.jpg';
+
 
 function LandingSlider() {
-    const images = [ff2, Landingimg, ds2, mha, aot];
+    const largeImages = [ff2, Landingimg, ds2, mha, aot];
+    const smallImages = [mobds2, mobjjk2, mobff2, mobaot2, mobop2];
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const settings = {
@@ -41,13 +48,31 @@ function LandingSlider() {
   return (
     <>
           <Slider {...settings}>
+              {window.innerWidth > 768
+                  ? largeImages.map((img, index) => (
+                      <div key={index}>
+                          <img className="gojo__img" src={img} alt="slide" />
+                      </div>
+                  ))
+                  : smallImages.map((img, index) => (
+                      <div key={index}>
+                          <img className="mob__img" src={img}  alt="slide" />
+                      </div>
+                  ))}
+          </Slider>
+    </>
+  )
+}
+export default LandingSlider
+
+
+/**
+ * 
+ *  <Slider {...settings}>
               {images.map((img, index) => (
                   <div key={index}>
                       <img className="gojo__img" src={img} alt="slide" />
                   </div>
               ))}
           </Slider>
-    </>
-  )
-}
-export default LandingSlider
+ */
