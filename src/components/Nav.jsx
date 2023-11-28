@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
@@ -6,7 +7,7 @@ function Nav() {
       
       <div className='logo__container'>
         <img src="" alt="" />
-        <h1>Anime Explorer</h1>
+        <Link to={`/`}><h1>Anime Explorer</h1></Link>
       </div>
       <div>
         <ul className='links'>

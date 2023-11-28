@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Element } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Search() {
     console.log("search componet")
@@ -50,6 +51,7 @@ function Search() {
                         <div>Null</div>
                     ) : (
                         search.map((searching) => (
+                            <Link to={`/AnimeInfo/${searching.mal_id}`}>
                             <div className='upcoming__card' key={searching.id}>
                                 <img
                                     className='upcoming__img'
@@ -58,6 +60,7 @@ function Search() {
                                 />
                                 <h1 className='upcoming__title'>{searching.title}</h1>
                             </div>
+                            </Link>
                         ))
                     )
                 )}
