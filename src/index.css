@@ -37,6 +37,33 @@ nav {
   position: relative;
 }
 
+.btn__menu, .menu__backdrop {
+  
+}
+
+.menu__backdrop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  display: flex;
+} 
+
+.btn__menu{
+  display: none;
+  color: white;
+  font-size: 24px;
+  z-index: 3;
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .logo__container {
   display: flex;
   align-items: center;
@@ -425,4 +452,17 @@ loading__info--img{
   background-color: rgba(255, 255, 255, 0.205);
   margin: 0;
   padding-bottom: 20px;
+}
+
+/* Moblie */
+
+@media (max-width: 768px){
+  .btn__menu{
+    display: block;
+    color: white;
+  }
+
+  .links{
+    display: none;
+  }
 }
