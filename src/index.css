@@ -52,6 +52,7 @@ nav {
   visibility: hidden;
   transition: all 300ms ease;
   transform: translate(100%);
+  opacity: 0;
 }
 
 .btn__menu {
