@@ -25,10 +25,6 @@ function AnimeInfo() {
   }, [id])
   
 
-  if (loading) {
-    return <div className='animeInfo'>Loading...</div>
-  }
-
   return (
     <div className='info__container'>
 
