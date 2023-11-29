@@ -11,6 +11,10 @@ function Nav() {
     document.body.classList.remove('menu--open')
   }
 
+  function closeMenuOnLinkClick(){
+    document.body.classList.remove('menu--open')
+  }
+
   return (
     <nav>
       
@@ -32,16 +36,16 @@ function Nav() {
             <FontAwesomeIcon icon="times" />
           </button>
           <ul className='menu__links'>
-            <li className="menu__list">
+            <li className="menu__list" onClick={closeMenuOnLinkClick}>
               <Link to={`/`}>Home</Link>
             </li>
-            <li className="menu__list">
+            <li className="menu__list" onClick={closeMenuOnLinkClick}>
               <Link to={`/`}>About</Link>
             </li>
-            <li className="menu__list">
+            <li className="menu__list" onClick={closeMenuOnLinkClick}>
               <Link to={`/`}>Log-In</Link>
             </li>
-            <li className="menu__list">
+            <li className="menu__list" onClick={closeMenuOnLinkClick}>
               <Link to={`/`}>Sign-up</Link>
             </li>
             

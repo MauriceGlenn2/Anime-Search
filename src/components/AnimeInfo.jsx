@@ -28,7 +28,24 @@ function AnimeInfo() {
   return (
     <div className='info__container'>
 
-      {animeData ? (
+      {loading ? (<div className='info__wrapper'>
+        <div className='loading__info--img'></div>
+        <div className='details__wrapper'>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+          <div className='loading__info--para'></div>
+        </div>
+      </div>) : animeData ? (
         <div className='info__wrapper'>
           <div className='img__wrapper'><img className='info__img' src={animeData.data.images.jpg.large_image_url} alt="" /></div> 
           <div className='details__wrapper'>
@@ -40,18 +57,9 @@ function AnimeInfo() {
             <Link to={`/`}> <span className='back__btn try__btn--link '>Back</span></Link>
           </div>
         </div>
-      ) : (
-        <div className='info__wrapper'>
-          <div className='loading__info--img'></div>
-            <div className='details__wrapper'>
-              <div className='loading__info--para'></div>
-              <div className='loading__info--para'></div>
-              <div className='loading__info--para'></div>
-              <div className='loading__info--para'></div>
-              <div className='loading__info--para'></div>
-              <div className='loading__info--para'></div>
-            </div>
-        </div>)
+        ) : (
+            <div className='info__title'>Error: No data</div>
+        )
 
       }
 
