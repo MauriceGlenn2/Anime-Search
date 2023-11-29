@@ -390,7 +390,11 @@ nav {
 
 /* animeInfo */
 
-
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .info__container {
   display: flex;
@@ -400,8 +404,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   color: white;
-  height: 100vh;
-  
+  flex: 1; 
 }
 
 .info__wrapper {
@@ -496,7 +499,7 @@ nav {
 }
 
 .loading__info--para{
-  width: 100%;
+  width: 70%;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.205);
   margin-top: 10px;
@@ -543,6 +546,9 @@ nav {
   .info__title {
     text-align: center;
     font-size: 28px;
+  }
+  .info__rating{
+    text-align: center;
   }
   
 }
@@ -611,6 +617,9 @@ nav {
     text-align: center;
     width: 90%;
   }
+    .info__container {
+    height: auto;
+  }
  
 }
 
@@ -623,5 +632,8 @@ nav {
   .loading__info--img {
     width: 280px;
     height: 380px;
+  }
+    .info__container {
+    height: auto;
   }
 }

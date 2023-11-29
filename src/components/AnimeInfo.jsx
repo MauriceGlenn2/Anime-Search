@@ -26,18 +26,12 @@ function AnimeInfo() {
   
 
   return (
+    <div className='container'>
     <div className='info__container'>
 
       {loading ? (<div className='info__wrapper'>
         <div className='loading__info--img'></div>
         <div className='details__wrapper'>
-          <div className='loading__info--para'></div>
-          <div className='loading__info--para'></div>
-          <div className='loading__info--para'></div>
-          <div className='loading__info--para'></div>
-          <div className='loading__info--para'></div>
-          <div className='loading__info--para'></div>
-          <div className='loading__info--para'></div>
           <div className='loading__info--para'></div>
           <div className='loading__info--para'></div>
           <div className='loading__info--para'></div>
@@ -64,6 +58,7 @@ function AnimeInfo() {
       }
 
 
+    </div>
     </div>
   )
 }
