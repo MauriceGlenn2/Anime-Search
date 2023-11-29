@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingSlider from './LandingSlider.jsx';
-import { Link as ScrollLink} from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Landing() {
     return (

@@ -45,23 +45,23 @@ function LandingSlider() {
             />
         ),
     };
-  return (
-    <>
-          <Slider {...settings}>
-              {window.innerWidth > 768
-                  ? largeImages.map((img, index) => (
-                      <div key={index}>
-                          <img className="gojo__img" src={img} alt="slide" />
-                      </div>
-                  ))
-                  : smallImages.map((img, index) => (
-                      <div key={index}>
-                          <img className="mob__img" src={img}  alt="slide" />
-                      </div>
-                  ))}
-          </Slider>
-    </>
-  )
+    return (
+        <>
+            <Slider {...settings}>
+                {window.innerWidth > 768
+                    ? largeImages.map((img, index) => (
+                        <div key={index}>
+                            <img className="gojo__img" src={img} alt="slide" />
+                        </div>
+                    ))
+                    : smallImages.map((img, index) => (
+                        <div key={index}>
+                            <img className="mob__img" src={img} alt="slide" />
+                        </div>
+                    ))}
+            </Slider>
+        </>
+    )
 }
 export default LandingSlider
 

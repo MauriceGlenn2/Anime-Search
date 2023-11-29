@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Nav() {
-  function openMenu(){
+  function openMenu() {
     document.body.classList += ' menu--open'
   }
 
-  function closeMenu(){
+  function closeMenu() {
     document.body.classList.remove('menu--open')
   }
 
-  function closeMenuOnLinkClick(){
+  function closeMenuOnLinkClick() {
     document.body.classList.remove('menu--open')
   }
 
   return (
     <nav>
-      
+
       <div className='logo__container'>
         <Link to={`/`}><h1>Anime Explorer</h1></Link>
       </div>
@@ -48,8 +48,8 @@ function Nav() {
             <li className="menu__list" onClick={closeMenuOnLinkClick}>
               <Link to={`/`}>Sign-up</Link>
             </li>
-            
-            
+
+
 
           </ul>
         </div>

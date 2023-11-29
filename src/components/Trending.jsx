@@ -1,24 +1,24 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 //https://api.jikan.moe/v4/top/anime
 function Trending() {
-const [trending, setTrending] = useState([])
-const [loading, setLoading] = useState(true)
+  const [trending, setTrending] = useState([])
+  const [loading, setLoading] = useState(true)
 
-useEffect(() => {
-  async function fetchTrending(upcoming) {
-    const { data } = await axios.get(`https://api.jikan.moe/v4/top/anime?filter=${upcoming}&limit=10`)
-    console.log(data)
-    setTrending(data.data)
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }
-  const filterType = "upcoming";
-  fetchTrending(filterType)
-}, [])
+  useEffect(() => {
+    async function fetchTrending(upcoming) {
+      const { data } = await axios.get(`https://api.jikan.moe/v4/top/anime?filter=${upcoming}&limit=10`)
+      console.log(data)
+      setTrending(data.data)
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    }
+    const filterType = "upcoming";
+    fetchTrending(filterType)
+  }, [])
 
   return (
     <>
@@ -46,6 +46,6 @@ useEffect(() => {
       </div>
     </>
   );
-          }
+}
 
 export default Trending

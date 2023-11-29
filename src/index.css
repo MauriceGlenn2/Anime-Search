@@ -346,10 +346,10 @@ nav {
 }
 
 /* Footer */
-  .foot--list {
-    cursor: not-allowed;
-    font-weight: 700;
-  }
+.foot--list {
+  cursor: not-allowed;
+  font-weight: 700;
+}
 
 .footer__container {
   display: flex;
@@ -390,7 +390,7 @@ nav {
 
 /* animeInfo */
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -404,7 +404,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   color: white;
-  flex: 1; 
+  flex: 1;
 }
 
 .info__wrapper {
@@ -498,7 +498,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.loading__info--para{
+.loading__info--para {
   width: 70%;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.205);
@@ -547,10 +547,9 @@ nav {
     text-align: center;
     font-size: 28px;
   }
-  .info__rating{
+  .info__rating {
     text-align: center;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -559,7 +558,7 @@ nav {
   }
 
   .link__list {
-    display: none ;
+    display: none;
   }
   .info__container {
     flex-direction: column;
@@ -617,10 +616,9 @@ nav {
     text-align: center;
     width: 90%;
   }
-    .info__container {
+  .info__container {
     height: auto;
   }
- 
 }
 
 @media (max-width: 480px) {
@@ -633,7 +631,7 @@ nav {
     width: 280px;
     height: 380px;
   }
-    .info__container {
+  .info__container {
     height: auto;
   }
 }
