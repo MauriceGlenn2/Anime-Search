@@ -65,14 +65,3 @@ function LandingSlider() {
 }
 export default LandingSlider
 
-
-/**
- * 
- *  <Slider {...settings}>
-              {images.map((img, index) => (
-                  <div key={index}>
-                      <img className="gojo__img" src={img} alt="slide" />
-                  </div>
-              ))}
-          </Slider>
- */
