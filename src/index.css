@@ -319,7 +319,14 @@ nav {
 .loading__img {
   width: 80%;
   height: 70%;
-  background-color: rgba(255, 255, 255, 0.205);
+   background: linear-gradient(
+    90deg,
+    lightgray 25%,
+    darkgray 50%,
+    lightgray 75%
+  ); /* Use a linear gradient with two colors */
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -327,7 +334,14 @@ nav {
 .loading__title {
   width: 70%;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.205);
+  background: linear-gradient(
+    90deg,
+    lightgray 25%,
+    darkgray 50%,
+    lightgray 75%
+  ); /* Use a linear gradient with two colors */
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
   margin-top: 10px;
 }
 
@@ -343,6 +357,18 @@ nav {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Footer */
@@ -490,7 +516,14 @@ nav {
 .loading__info--img {
   width: 400px;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.205);
+   background: linear-gradient(
+    90deg,
+    lightgray 25%,
+    darkgray 50%,
+    lightgray 75%
+  ); /* Use a linear gradient with two colors */
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
   margin: ;
   padding-bottom: 20px;
   border-radius: 10px;
@@ -501,7 +534,14 @@ nav {
 .loading__info--para {
   width: 70%;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.205);
+   background: linear-gradient(
+    90deg,
+    lightgray 25%,
+    darkgray 50%,
+    lightgray 75%
+  ); /* Use a linear gradient with two colors */
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
   margin-top: 10px;
   transition: all 0.3s ease-in-out;
 }
