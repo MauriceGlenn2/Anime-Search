@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Element } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Search() {
-    console.log("search componet")
+    AOS.init({ duration: 2000 });
     const [search, setSearch] = useState([])
     const [searchTitle, setSearchTitle] = useState('')
     const [loading, setLoading] = useState(true)
 
     async function onSearch(event) {
-        console.log("search componet")
+       
         if (event.key === "Enter") {
             setLoading(true)
             console.log("thisclicked")
@@ -36,7 +38,7 @@ function Search() {
                     onChange={(event) => setSearchTitle(event.target.value)}
                     onKeyDown={onSearch}
                 />
-                <div className='search__results'>
+                <div className='search__results' data-aos="fade-left">
                     {loading ? (
                         new Array(10).fill(0).map((_, index) => (
                             <div className='loading__card' key={index}>

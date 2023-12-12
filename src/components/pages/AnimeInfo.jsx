@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function AnimeInfo() {
+  AOS.init({ duration: 2000 });
   const { id } = useParams();
-  console.log("ID:", id);
   const [animeData, setAnimeData] = useState(null)
   const [loading, setLoading] = useState(true)
 
@@ -19,15 +21,12 @@ function AnimeInfo() {
       setTimeout(() => {
         fetchAnimeInfo()
       }, 3000);
-
     }
-
   }, [id])
-
 
   return (
     <div className='container'>
-      <div className='info__container'>
+      <div className='info__container' data-aos="fade-up">
         {loading ? (<div className='info__wrapper'>
           <div className='loading__info--img'></div>
           <div className='details__wrapper'>
@@ -55,7 +54,6 @@ function AnimeInfo() {
         )
 
         }
-
 
       </div>
     </div>

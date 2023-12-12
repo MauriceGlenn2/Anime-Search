@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-//https://api.jikan.moe/v4/top/anime
 function Trending() {
   const [trending, setTrending] = useState([])
   const [loading, setLoading] = useState(true)
+  AOS.init({ duration: 2000 });
 
   useEffect(() => {
     async function fetchTrending(upcoming) {
@@ -22,8 +24,8 @@ function Trending() {
 
   return (
     <>
-      <h1 className='upcoming__heading'>Coming Soon</h1>
-      <div className='upcoming__container'>
+      <h1 className='upcoming__heading' data-aos="fade-right">Coming Soon</h1>
+      <div className='upcoming__container' data-aos="fade-right">
         {loading ? (
           new Array(10).fill(0).map((_, index) => (
             <div className='loading__card' key={index}>
